@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap&subset=cyrillic');
+$f-main: 'Montserrat', 'sans-serif';
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+
+$cl-grey: #E5E5E5;
+$cl-cream: #F9F6F1;
+$cl-accent: #D7B399;
+$cl-black: #212121;
+
+.body {
+    font-family: $f-main;
+    font-weight: $fw-regular;
+    font-size: 14px;
+}
