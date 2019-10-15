@@ -24,13 +24,23 @@ $cl-black: #212121 !important;
 
 /* Меню навигации */
 .menu {
+    padding-top: 60px;
+
     &__brand {
         width: 100%;
         position: fixed;
         left: 0;
-        top: 0;
+        top: 55px;
         display: flex;
         justify-content: center;
+
+        & a {
+            font-weight: $fw-bold;
+        }
+
+        & img {
+            margin-right: 10px;
+        }
     }
 
     &__toogler {
@@ -48,6 +58,18 @@ $cl-black: #212121 !important;
 
     &__purchase-count {
         color: white;
-        text-shadow: black 0 0 2px;        
+        text-shadow: black 0 0 2px;
+        margin-left: -20px;
+    }
+
+    &__shopping-basket {
+        margin-top: -6px;
+    }
+}
+
+/* Медиа */
+@media screen and (max-width: 375px) {
+    .menu__brand {
+        left: 50px;
     }
 }

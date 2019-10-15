@@ -12,17 +12,29 @@
 }
 
 /* Меню навигации */
+.menu {
+  padding-top: 60px;
+}
+
 .menu__brand {
   width: 100%;
   position: fixed;
   left: 0;
-  top: 0;
+  top: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.menu__brand a {
+  font-weight: 700;
+}
+
+.menu__brand img {
+  margin-right: 10px;
 }
 
 .menu__toogler {
@@ -41,4 +53,16 @@
 .menu__purchase-count {
   color: white;
   text-shadow: black 0 0 2px;
+  margin-left: -20px;
+}
+
+.menu__shopping-basket {
+  margin-top: -6px;
+}
+
+/* Медиа */
+@media screen and (max-width: 375px) {
+  .menu__brand {
+    left: 50px;
+  }
 }
