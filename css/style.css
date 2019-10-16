@@ -7,7 +7,7 @@
 }
 
 /* Шапка сайта*/
-.header, .slider {
+.header {
   background-color: #F9F6F1;
 }
 
@@ -18,7 +18,7 @@
 
 .menu__brand {
   width: 100%;
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 55px;
   display: -webkit-box;
@@ -62,6 +62,7 @@
 
 /* Слайдер */
 .slider {
+  background-color: #F9F6F1;
   padding-top: 140px;
   padding-bottom: 200px;
 }
@@ -98,6 +99,11 @@
   font-weight: 400;
 }
 
+.slider__caption-description {
+  font-size: 55px;
+  font-weight: 700;
+}
+
 .slider__control-prev {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23CECECE' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
 }
@@ -106,10 +112,71 @@
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23CECECE' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
 }
 
+/* Подвал */
+.footer__links {
+  background-color: #212121 !important;
+  color: white;
+  padding: 70px 0;
+}
+
+.footer__title {
+  font-size: 10px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.footer__info {
+  line-height: 22px;
+  padding-right: 50px;
+}
+
+.footer__link {
+  display: block;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer__link i {
+  margin-right: 5px;
+  color: #D7B399;
+  font-size: 1.2em;
+}
+
+.footer__link:hover {
+  color: white;
+}
+
+.footer__link-logo {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.footer__link-logo img {
+  margin-right: 10px;
+}
+
+.footer__link-logo:hover {
+  text-decoration: none;
+}
+
+.footer__copyright {
+  padding: 30px 0;
+}
+
+.footer__copyright-policy {
+  text-align: right;
+}
+
 /* Медиа */
-@media screen and (max-width: 375px) {
-  .menu__brand {
-    left: 50px;
+@media screen and (max-width: 1199px) {
+  .slider__caption-description {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .slider__caption-description {
+    font-size: 20px;
   }
 }
 
@@ -124,5 +191,15 @@
   }
   .slider__buttons {
     bottom: -50px;
+  }
+  .slider__caption-description {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .menu__brand {
+    width: 80%;
+    left: 50px;
   }
 }

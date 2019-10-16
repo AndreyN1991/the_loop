@@ -18,7 +18,7 @@ $cl-black: #212121 !important;
 }
 
 /* Шапка сайта*/
-.header, .slider {
+.header {
     background-color: $cl-cream;
 }
 
@@ -28,7 +28,7 @@ $cl-black: #212121 !important;
 
     &__brand {
         width: 100%;
-        position: fixed;
+        position: absolute;
         left: 0;
         top: 55px;
         display: flex;
@@ -68,7 +68,8 @@ $cl-black: #212121 !important;
 }
 
 /* Слайдер */
-.slider {    
+.slider {
+    background-color: $cl-cream;
     padding-top: 140px;
     padding-bottom: 200px;
 
@@ -102,6 +103,11 @@ $cl-black: #212121 !important;
             font-size: 30px;
             font-weight: $fw-regular;
         }
+
+        &-description {
+            font-size: 55px;
+            font-weight: $fw-bold;
+        }
     }
 
     &__control-prev {
@@ -113,10 +119,73 @@ $cl-black: #212121 !important;
     }
 }
 
+/* Подвал */
+.footer {
+    &__links {
+        background-color: $cl-black;
+        color: white;
+        padding: 70px 0;
+    }
+
+    &__title {
+        font-size: 10px;
+        font-weight: $fw-bold;
+        margin-bottom: 15px;
+    }
+
+    &__info {
+        line-height: 22px;
+        padding-right: 50px;
+    }
+
+    &__link {
+        display: block;
+        color: white;
+        margin-bottom: 10px;
+
+        & i {
+            margin-right: 5px;
+            color: $cl-accent;
+            font-size: 1.2em;
+        }
+
+        &:hover {
+            color: white;
+        }
+
+        &-logo {
+            font-weight: $fw-bold;
+            font-size: 24px;
+
+            & img {
+                margin-right: 10px;
+            }
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__copyright {
+        padding: 30px 0;
+
+        &-policy {
+            text-align: right;
+        }
+    }
+}
+
 /* Медиа */
-@media screen and (max-width: 375px) {
-    .menu__brand {
-        left: 50px;
+@media screen and (max-width: 1199px) {
+    .slider__caption-description {
+      font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .slider__caption-description {
+      font-size: 20px;
     }
 }
 
@@ -133,5 +202,16 @@ $cl-black: #212121 !important;
         &__buttons {
             bottom: -50px;
         }
+
+        &__caption-description {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .menu__brand {
+        width: 80%;
+        left: 50px;
     }
 }
