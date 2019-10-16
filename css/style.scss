@@ -67,9 +67,71 @@ $cl-black: #212121 !important;
     }
 }
 
+/* Слайдер */
+.slider {    
+    padding-top: 140px;
+    padding-bottom: 200px;
+
+    &__buttons {
+        bottom: -100px;
+
+        & li {
+            background-color: #CECECE;
+            border: 1px solid black;
+            opacity: 1;
+            width: 40px;
+            height: 7px;
+
+            &.active {
+                background-color: $cl-accent;
+            }
+        }
+    }
+
+    &__image {
+        margin-left: auto;
+    }
+
+    &__caption {
+        color: $cl-black;
+        left: 0;
+        right: 50%;
+        text-align: left;
+
+        &-title {
+            font-size: 30px;
+            font-weight: $fw-regular;
+        }
+    }
+
+    &__control-prev {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23CECECE' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+    }
+
+    &__control-next {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23CECECE' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+    }
+}
+
 /* Медиа */
 @media screen and (max-width: 375px) {
     .menu__brand {
         left: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .slider {
+        padding-top: 40px;
+        padding-bottom: 100px;
+
+        &__image {
+            margin-right: auto;
+            width: 100% !important;
+        }
+
+        &__buttons {
+            bottom: -50px;
+        }
     }
 }
