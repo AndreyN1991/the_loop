@@ -112,6 +112,11 @@
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23CECECE' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
 }
 
+/* Модели товаров */
+.models__title {
+  text-align: center;
+}
+
 /* Подвал */
 .footer__links {
   background-color: #212121 !important;

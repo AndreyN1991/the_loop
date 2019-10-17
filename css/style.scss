@@ -119,6 +119,13 @@ $cl-black: #212121 !important;
     }
 }
 
+/* Модели товаров */
+.models {
+    &__title {
+        text-align: center;
+    }
+}
+
 /* Подвал */
 .footer {
     &__links {
