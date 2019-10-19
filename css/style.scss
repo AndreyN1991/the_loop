@@ -121,8 +121,105 @@ $cl-black: #212121 !important;
 
 /* Модели товаров */
 .models {
+    margin: 150px 0;
+    text-align: center;    
+
     &__title {
-        text-align: center;
+        width: 100%;
+        font-weight: $fw-bold;
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    &__list {
+        margin: 100px 0;
+        justify-content: center;
+    }
+
+    &__description {
+        font-weight: $fw-semi-bold;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 0;
+    }
+
+    &__price {
+        font-weight: $fw-bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: $cl-accent;
+        margin-bottom: 0;
+    }
+
+    &__portrait {
+        max-width: 200px;
+        padding: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+
+    &__caption {
+        padding-top: 20px;
+    }
+
+    &__portrait:before, &__portrait:after,
+    &__caption:before, &__caption:after {
+        content:"";
+        position: absolute;
+        width: 25px;
+        height: 25px;
+    }
+
+    &__portrait:before {
+        top: 0;
+        left: 0;
+        border-top: 3px solid $cl-accent;
+        border-left: 3px solid $cl-accent;
+    }
+
+    &__portrait:after {
+        top: 0;
+        right: 0;
+        border-top: 3px solid $cl-accent;
+        border-right: 3px solid $cl-accent;
+    }
+
+    &__caption:before {
+        bottom: 0;
+        left: 0;
+        border-bottom: 3px solid $cl-accent;
+        border-left: 3px solid $cl-accent;
+    }
+
+    &__caption:after {
+        bottom: 0;
+        right: 0;
+        border-bottom: 3px solid $cl-accent;
+        border-right: 3px solid $cl-accent;
+    }
+
+    &__bottom {
+        justify-content: center;        
+    }
+
+    &__button {
+        background-color: $cl-accent;
+        color: white;
+        padding: 20px;
+
+        &:hover {
+            color: white;
+            text-decoration: none;
+
+            & .models__button-arrow {
+                transform: scaleX(1.5) translateX(3px);
+            }
+        }
+
+        &-arrow {
+            margin-left: 10px;
+            font-size: 1.2em;
+        }
     }
 }
 
