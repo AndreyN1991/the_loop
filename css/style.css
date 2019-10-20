@@ -112,6 +112,69 @@
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23CECECE' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
 }
 
+/* Объявления */
+.declaration {
+  padding: 70px 0;
+  background-color: #212121 !important;
+}
+
+.declaration__title {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.declaration__price {
+  font-weight: 400;
+}
+
+.declaration__text {
+  color: #E5E5E5;
+  text-align: center;
+  font-weight: 300;
+  font-size: 21px;
+}
+
+/* Категории */
+/* Форма подписки */
+.subscription {
+  background-color: #212121 !important;
+  padding: 70px 0;
+}
+
+.subscription__title {
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.subscription__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.subscription__mail {
+  width: 100%;
+  padding: 10px 15px;
+  color: #E5E5E5;
+}
+
+.subscription__button {
+  padding: 10px 35px;
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  background-color: #D7B399;
+  border: none;
+  margin-left: 35px;
+}
+
 /* Модели товаров */
 .models {
   margin: 150px 0;
@@ -279,6 +342,17 @@
 @media screen and (max-width: 1199px) {
   .slider__caption-description {
     font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .subscription__form {
+    display: block;
+  }
+  .subscription__button {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
   }
 }
 
