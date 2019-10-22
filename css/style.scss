@@ -145,7 +145,83 @@ $cl-black: #212121 !important;
 }
 
 /* Категории */
+.category {
+    &__section {
+        text-align: left;
+        height: 260px;
+        padding-left: 20px;
 
+        &-man {
+            background-color: $cl-cream;
+        }
+
+        &-woman {
+            background-color: #F4F4F4;
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: $fw-medium;
+        letter-spacing: 0.03em;
+    }
+
+    &__span {
+        font-weight: $fw-light;
+    }
+
+    &__caption {
+        font-weight: $fw-light;
+        font-size: 16px;
+    }
+
+    &_link {
+        background-color: $cl-accent;
+        color: white;
+        display: block;
+        width: 80px;
+        height: 30px;
+        text-align: center;
+
+        &:hover {
+            color: white;
+            text-decoration: none;
+
+            & .category_link-arrow {
+                transform: scaleX(1.5) translateX(3px);
+            }
+        }
+
+        &-arrow {
+            margin-top: 7px;
+            font-size: 1.2em;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        right: 15px;
+        bottom: 0;
+    }
+
+    &__models {
+        margin-top: 10px;
+    }
+
+    &__model {
+        max-width: 280px;
+        margin-bottom: 10px;
+
+        &-caption {
+            position: absolute;
+            left: 25px;
+            bottom: 0;
+            font-size: 21px;
+            font-weight: $fw-light;
+            letter-spacing: 0.03em;
+        }
+    }
+}
 
 /* Форма подписки */
 .subscription {

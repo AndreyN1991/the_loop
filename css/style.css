@@ -138,6 +138,83 @@
 }
 
 /* Категории */
+.category__section {
+  text-align: left;
+  height: 260px;
+  padding-left: 20px;
+}
+
+.category__section-man {
+  background-color: #F9F6F1;
+}
+
+.category__section-woman {
+  background-color: #F4F4F4;
+}
+
+.category__title {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+.category__span {
+  font-weight: 300;
+}
+
+.category__caption {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.category_link {
+  background-color: #D7B399;
+  color: white;
+  display: block;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+}
+
+.category_link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.category_link:hover .category_link-arrow {
+  -webkit-transform: scaleX(1.5) translateX(3px);
+          transform: scaleX(1.5) translateX(3px);
+}
+
+.category_link-arrow {
+  margin-top: 7px;
+  font-size: 1.2em;
+}
+
+.category__image {
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+}
+
+.category__models {
+  margin-top: 10px;
+}
+
+.category__model {
+  max-width: 280px;
+  margin-bottom: 10px;
+}
+
+.category__model-caption {
+  position: absolute;
+  left: 25px;
+  bottom: 0;
+  font-size: 21px;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+}
+
 /* Форма подписки */
 .subscription {
   background-color: #212121 !important;
